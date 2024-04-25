@@ -400,69 +400,7 @@ span{
 		margin-top: 20px;
 	}
 }
-section.services{
-	width: 100%;
-	padding: 70px 8% 50px;
-	background-color: var(--bg-clr-1);
-}
-.services .services-contents{
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-}
-.section-heading{
-    text-align:center;
-    font-size:30px;
-}
-.services-contents .service-box{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-	flex-basis: 32%;
-	text-align: center;
-	padding: 40px 15px;
-	background-color: var(--bg-clr-2);
-	border: 1px solid white;
-	margin-bottom: 20px;
-	cursor: pointer;
-	transition: transform 0.3s,
-	           box-shadow 0.3s;
-}
-.services-contents .service-box:hover{
-	transform: translateY(-3px);
-	box-shadow: 0px 5px 12px 0px white;
-}
-.services-contents .service-box .icon-wrapper{
-	width: 60px;
-	height: 60px;
-	border-radius: 50%;
-	background-color: var(--primary-base-clr);
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	transition: 0.3s;
-}
-.services-contents .service-box .icon-wrapper i{
-	font-size: 25px;
-	color: var(--main-heading-clr);
-	transition: 0.3s;
-}
-.services-contents .service-box:hover .icon-wrapper{
-	background-color: var(--main-heading-clr);
-}
-.services-contents .service-box:hover .icon-wrapper i{
-	color: var(--primary-base-clr);
-}
-.services-contents .service-box h2{
-	padding: 15px 0px 10px;
-	color: var(--main-heading-clr);
-	font-size: 22px;
-}
-.services-contents .service-box p{
-	color: var(--text-clr);
-	line-height: 1.4;
-}
+
 .section.portfolio{
 	width: 100%;
 	padding: 70px 8% 50px;
