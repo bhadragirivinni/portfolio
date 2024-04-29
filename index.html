@@ -318,23 +318,24 @@
                             <span>bhadragirivineetha@gmail.com</span>
                         </div>
                     </div>
-        
+                   
                 </div>
-               <form class="contact-form">
+               <form action="https://api.web3forms.com/submit"  class="contact-form" method="POST">
+                <input type="hidden" name="access_key" value="5dfb8362-e57b-41d7-99ff-7a94a4f9fc9d">
                     <div class="input-element name-input">
-                        <input type="text" required="required" placeholder="Your Name" required>
+                        <input type="text" placeholder="Your Name" name="text" required>
                     </div>
         
                     <div class="input-element email-input">
-                        <input type="email" required="required" placeholder="Your Email" required>
+                        <input type="email"  placeholder="Your Email" name="email" required>
                     </div>
         
                     <div class="text-area">
-                        <textarea required="required" placeholder="Your Message"></textarea>
+                        <textarea  placeholder="Your Message" name="" required></textarea>
                     </div>
         
                     <div class="form-button-container">
-                        <input type="button" value="Send Message" class="btn form-btn">
+                        <input type="submit" value="Send Message" class="btn form-btn">
                     </div>
                 </form>
                 
