@@ -18,7 +18,7 @@
             <a href="#home" class="active">Home</a>
             <a href="#about">About</a>
             <a href="#skills">Skills</a>
-	    <a href="#portfolio">Portfolio</a>
+            <a href="#portfolio">Portfolio</a>
             <a href="#contact">Contact</a>
         </nav>
     </header>
@@ -31,9 +31,9 @@
                 creative web developer with a passion for creating beautiful,responsive,
                 and user-friendly websites.</p>
             <div class="social-media">
-                <a href="https://github.com/bhadragirivinni"><i class="fa-brands fa-github"></i></a>
-                <a href="https://www.instagram.com/vineetha_1321?igsh=MWMzeGtnNThsNTZ1ag=="><i class="fa-brands fa-instagram"></i></a>
-                <a href="https://www.linkedin.com/in/bhadragiri-vineetha-291879305?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
             </div>
             <a href="images/resume (1)_page-0001.jpg" class="btn" download>Download CV</a>
             </div>
@@ -51,7 +51,7 @@
                         </div>
                         <div class="about-col-2">
                             <h1 class="sub-title">About Me</h1>
-                            <p>I am highly motivated and enthusiastic Post-graduatd in Chemistry with a passion for front-developement. 
+                            <p>I am highly motivated and enthusiastic under-graduated in computer science with a passion for front-developement. 
                                 I certified as UI/UX Developer at Tech Mahindra SMART Acadamy, Visakhapatnam. 
                                 Eager to seeking an opportunities to prove myskills and contribute to develop dynamic and well user experienced web-projects.
                             </p>
@@ -172,12 +172,19 @@
             </div>
         </div>
 
+		</div>
+
+	</div>
+    </section>
     <section class="portfolio" id="portfolio">
        
-        <div class="main-title">
-            <h1>RECENT WORK</h1>
-        
-        </div>
+        <div class="container">
+	       <div class="main-title">
+                <h1>Recent Works</h1>
+                
+            </div>
+            </div>
+            
         
         <div class="portfolio-contents">
             
@@ -269,9 +276,13 @@
     
 <section class="contact" id="contact">
            
-            <header class="section-heading">
-                <h1>GET IN TOUCH</h1>
-            </header>
+    <div class="container">
+        <div class="main-title">
+             <h1>GET IN TOUCH </h1>
+             
+         </div>
+         </div>
+         
            
             <div class="contact-contents">
                 
@@ -311,11 +322,11 @@
                 </div>
                <form class="contact-form">
                     <div class="input-element name-input">
-                        <input type="text" required="required" placeholder="Your Name">
+                        <input type="text" required="required" placeholder="Your Name" required>
                     </div>
         
                     <div class="input-element email-input">
-                        <input type="email" required="required" placeholder="Your Email">
+                        <input type="email" required="required" placeholder="Your Email" required>
                     </div>
         
                     <div class="text-area">
@@ -331,7 +342,50 @@
             </div>
             
         </div>
-        <script type="text/javascript" src="script.js"></script>
+        
     </section>
+    <script>
+
+        // tartpoint java for about-sec.  skill, educ., & cert. ---------
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+        // Endpoint java for about-sec.  skill, educ., & cert. ------------
+
+
+
+        // startpoint for side-navbar for small screens-----------
+
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+
+        // Endpoint for side-navbar for small screens-----------
+
+    </script>
+    <script>
+        // Function to show the heading after a delay
+        function showHeading() {
+          document.getElementById("txt-delay").style.display = "block";
+        }
+      
+        // Delay the execution of the function by 2000 milliseconds (2 seconds)
+        setTimeout(showHeading, 2000);
+      </script>
     </body>
 </html>
