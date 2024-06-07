@@ -35,6 +35,7 @@ section{
 
 .header{
     position: fixed;
+
     top: 0;
     left: 0;
     width: 100%;
@@ -42,6 +43,7 @@ section{
     background: var(--bg-color);
     display: flex;
     justify-content: space-between;
+
     align-items: center;
     z-index: 100;
 }
@@ -52,12 +54,16 @@ section{
     font-weight: 500;
     cursor: default;
 }
+.logo :hover{
+	color:red;
+}
 
 .navbar a {
     font-size: 1.5rem;
-    color: var(--text-color);
+    color:white;
     margin-left: 4rem;
     font-weight: 700;
+	
 }
 
 .navbar a:hover
@@ -66,9 +72,10 @@ section{
 }
 
 
+
 #menu-icon{
     font-size: 3.6rem;
-    color: var(--text-color);
+    color: black;
     display: none;
 }
 
@@ -78,7 +85,7 @@ section{
     align-items: center;
 }
 .home-content{
-	padding-bottom: 50px;
+	padding-top: 90px;
 }
 .home-content h3{
     font-size: 3.2rem;
@@ -112,6 +119,10 @@ span{
     margin-left: 100px;
    
 }
+.text:hover{
+color:skyblue
+}
+
 
 @keyframes floatImage{
     0%{
@@ -135,6 +146,7 @@ span{
     align-items: center;
     width: 4rem;
     height: 4rem;
+	padding-top: 10px;
     background: transparent;
     border: .2rem solid white;
     border-radius: 50%;
@@ -175,9 +187,14 @@ span{
 }
 
 .about-col-1 img{
-    height: 400px;
-    width: 250px;
-    border-radius: 15%;
+    height: 250px;
+    width: 325px;
+    border-radius:3%;
+	position: relative;
+	left: -50px;
+	bottom:-40px;
+
+	
 	
 }
 .row{
@@ -188,6 +205,9 @@ span{
 
 .about-col-1{
     flex-basis: 35%;
+	padding-top:100px;
+	padding-bottom: 50px;
+	
 }
 
 .about-col-2{
@@ -197,7 +217,7 @@ span{
 .sub-title{
     font-size: 60px;
     font-weight: 600;
-    color: rgb(13, 27, 90)
+    color:skyblue;
 }
 
 .tab-titles{
@@ -255,7 +275,7 @@ span{
 .about-col-2 p {
     line-height: 22px;
 }
-
+/*  */
 
 .container{
 	position: relative;
@@ -387,6 +407,12 @@ span{
 	}
 }
 @media(max-width: 568px){
+	.container{
+		padding: 30px 8%;
+	}
+	.header nav { 
+		font-size: 6px;
+	}
 	.container .row{
 		flex-direction: column;
 	}
@@ -400,6 +426,7 @@ span{
 		margin-top: 20px;
 	}
 }
+
 
 
  .main-title{
@@ -676,4 +703,30 @@ section.page-footer{
 	}
 }
 
-
+@media screen and (max-width:822px){
+	.header{
+		width:822px;
+	}
+}
+@media screen and (max-width:320px){
+	/* .header{
+		width:600px;
+		padding:0px;
+		display:inline-flex;
+		justify-content: space-between	;
+		margin-left:40px;
+	} */
+	.home-content{
+		width:320px;
+		margin-left:850px;
+		height:100vh;
+	}
+	.home-img img{
+        position:relative;
+		right:400px;
+		top:400px;
+		height: 300px;
+		width: 300px;
+		
+	}
+}
